@@ -4,7 +4,7 @@ public class Part1Demonstrations {
         printNumberBackward(9);
         System.out.println();
         printNumber(9);
-        // errorDem(1);
+        //errorDem(1);
     }
     public static void printNumberBackward(int n) {
         if (n < 1) {
