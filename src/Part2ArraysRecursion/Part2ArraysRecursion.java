@@ -1,7 +1,7 @@
-package ArraysRecursion;
+package Part2ArraysRecursion;
 
 import java.util.Scanner;
-public class ArraysRecursion {
+public class Part2ArraysRecursion {
     static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -14,11 +14,6 @@ public class ArraysRecursion {
         int what = 5;
         int count = findCountInArray(array, what, 0);
         System.out.println("Count of element " + what + " is " + count);
-
-        printString("Hello");
-
-        String str = reverseString("Hello");
-        System.out.println(str);
     }
 
     public static void printArray(int[] array, int i) {
@@ -41,23 +36,5 @@ public class ArraysRecursion {
             return 1 + findCountInArray(array, what, i + 1);
         } else
             return findCountInArray(array, what, i+1);
-    }
-    public static void printString(String s) {
-        int count = 0;
-        count++;
-        if (count > s.length()) {
-            return;
-        }
-        System.out.println(s.charAt(0));
-        printString(s.substring(1));
-        System.out.println(s.charAt(0));
-    }
-    public static String reverseString(String s) {
-        int count = 0;
-        count++;
-        if (count > s.length()) {
-            return "";
-        }
-        return reverseString(s.substring(1)) + s.charAt(0);
     }
 }
